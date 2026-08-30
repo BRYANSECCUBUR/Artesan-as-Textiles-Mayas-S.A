@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Descubre nuestra colección de trajes típicos guatemaltecos, piezas llenas de color, tradición y diseño artesanal."
+      name="description"
+    />
+    <title>Raíces de Guatemala | Trajes Típicos</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#eaedff",
+              "surface-variant": "#dae2fd",
+              "tertiary-container": "#008378",
+              "inverse-surface": "#283044",
+              primary: "#00647c",
+              "secondary-fixed-dim": "#c3c0ff",
+              "inverse-on-surface": "#eef0ff",
+              surface: "#faf8ff",
+              "on-tertiary-fixed-variant": "#005049",
+              background: "#faf8ff",
+              error: "#ba1a1a",
+              "secondary-fixed": "#e2dfff",
+              "surface-container-highest": "#dae2fd",
+              "on-secondary": "#ffffff",
+              "on-tertiary-fixed": "#00201d",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#001f28",
+              "on-surface-variant": "#3e484d",
+              "surface-container-low": "#f2f3ff",
+              "surface-container-high": "#e2e7ff",
+              "on-secondary-fixed-variant": "#3323cc",
+              "on-primary": "#ffffff",
+              "on-primary-fixed-variant": "#004e61",
+              "surface-dim": "#d2d9f4",
+              "tertiary-fixed": "#89f5e7",
+              "on-surface": "#131b2e",
+              secondary: "#4b41e1",
+              "surface-bright": "#faf8ff",
+              "outline-variant": "#bdc8ce",
+              "cobalt-blur": "rgba(79, 70, 229, 0.08)",
+              "secondary-container": "#645efb",
+              outline: "#6e797e",
+              "on-error-container": "#93000a",
+              "deep-indigo": "#1e1b4b",
+              "cool-slate": "#f8fafc",
+              "inverse-primary": "#6cd3f7",
+              "tertiary-fixed-dim": "#6bd8cb",
+              "border-cool": "#e2e8f0",
+              tertiary: "#00685f",
+              "primary-fixed": "#b7eaff",
+              "on-tertiary-container": "#f4fffc",
+              "primary-container": "#007f9d",
+              "on-secondary-fixed": "#0f0069",
+              "primary-fixed-dim": "#6cd3f7",
+              "on-error": "#ffffff",
+              "mesh-blue": "#e0f2fe",
+              "error-container": "#ffdad6",
+              "surface-tint": "#006780",
+              "on-primary-container": "#fafdff",
+              "on-background": "#131b2e",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#fffbff",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              unit: "4px",
+              "margin-desktop": "48px",
+              "container-max": "1200px",
+              "section-padding-lg": "96px",
+              gutter: "24px",
+              "margin-mobile": "16px",
+            },
+            fontFamily: {
+              "ui-label": ["Inter"],
+              "heading-h2": ["Inter"],
+              "body-md": ["Inter"],
+              "display-h1": ["Inter"],
+              price: ["Inter"],
+              "nav-link": ["Inter"],
+              "heading-h2-mobile": ["Inter"],
+              "body-lg": ["Inter"],
+              eyebrow: ["Inter"],
+              "display-h1-mobile": ["Inter"],
+            },
+            fontSize: {
+              "ui-label": ["14px", { lineHeight: "20px", fontWeight: "800" }],
+              "heading-h2": [
+                "52px",
+                {
+                  lineHeight: "60px",
+                  letterSpacing: "-0.045em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "display-h1": [
+                "90px",
+                {
+                  lineHeight: "96px",
+                  letterSpacing: "-0.065em",
+                  fontWeight: "800",
+                },
+              ],
+              price: ["20px", { lineHeight: "24px", fontWeight: "950" }],
+              "nav-link": ["15px", { lineHeight: "24px", fontWeight: "700" }],
+              "heading-h2-mobile": [
+                "32px",
+                {
+                  lineHeight: "38px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              eyebrow: ["13px", { lineHeight: "16px", fontWeight: "900" }],
+              "display-h1-mobile": [
+                "48px",
+                {
+                  lineHeight: "52px",
+                  letterSpacing: "-0.04em",
+                  fontWeight: "800",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans bg-surface text-on-surface leading-relaxed">
+    <header
+      class="sticky top-0 z-20 bg-surface/90 backdrop-blur-md border-b border-primary/10"
+    >
+      <div
+        class="max-w-[1160px] w-[92%] mx-auto h-[76px] flex items-center justify-between gap-6"
+      >
+        <a class="font-black text-xl tracking-tight text-secondary" href="#"
+          >Raíces<span class="text-primary">GT</span></a
+        >
+        <nav
+          class="hidden md:flex gap-7 text-on-surface-variant font-bold text-[0.94rem]"
+        >
+          <a class="hover:text-primary transition-colors" href="#nuevos"
+            >Nuevos</a
+          >
+          <a class="hover:text-primary transition-colors" href="#historia"
+            >Nuestra historia</a
+          >
+          <a class="hover:text-primary transition-colors" href="#envios"
+            >Envíos</a
+          >
+        </nav>
+        <a
+          class="hidden sm:inline-block px-5 py-2.5 rounded-full bg-gradient-to-br from-primary to-secondary text-white font-extrabold shadow-[0_9px_22px_rgba(75,65,225,0.22)]"
+          href="./productos.html"
+          >Ver colección</a
+        >
+      </div>
+    </header>
+    <main>
+      <section
+        class="max-w-[1160px] w-[92%] mx-auto min-h-[calc(100vh-76px)] grid grid-cols-1 md:grid-cols-[1.02fr_0.98fr] items-center gap-10 md:gap-[70px] py-[50px] md:py-[70px] pb-[90px] relative overflow-hidden"
+      >
+        <div
+          class="absolute -left-[130px] top-[80px] w-[330px] h-[330px] rounded-full bg-inverse-primary/15 blur-[4px] -z-10"
+        ></div>
+        <div
+          class="absolute -right-[180px] -bottom-[100px] w-[420px] h-[420px] rounded-full bg-primary/15 blur-[4px] -z-10"
+        ></div>
+        <div>
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-mesh-blue text-primary font-black text-[0.82rem] mb-4"
+          >
+            Textiles con identidad guatemalteca
+          </div>
+          <h1
+            class="text-[clamp(3rem,6vw,5.6rem)] leading-none tracking-[-0.065em] max-w-[700px] font-extrabold"
+          >
+            Viste la
+            <span
+              class="bg-gradient-to-r from-primary via-primary-container to-inverse-primary bg-clip-text text-transparent"
+              >tradición
+            </span>
+            a tu manera.
+          </h1>
+          <p
+            class="my-6 md:mb-[30px] max-w-[600px] text-on-surface-variant text-[1.08rem]"
+          >
+            Descubre trajes típicos llenos de color, diseño y significado.
+            Piezas seleccionadas para conservar la esencia de nuestras
+            tradiciones y llevarlas contigo.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a
+              class="cursor-pointer px-5 py-3.5 rounded-xl font-black text-[0.96rem] transition-transform duration-200 hover:-translate-y-0.5 bg-gradient-to-br from-primary to-secondary text-white shadow-[0_12px_28px_rgba(75,65,225,0.24)]"
+              href="#nuevos"
+              >Explorar nuevos ingresos</a
+            >
+            <a
+              class="cursor-pointer px-5 py-3.5 rounded-xl font-black text-[0.96rem] transition-transform duration-200 hover:-translate-y-0.5 bg-white border border-border-cool text-on-surface"
+              href="#historia"
+              >Conocer más</a
+            >
+          </div>
+        </div>
+        <div
+          class="bg-white p-3.5 rounded-[30px] shadow-[0_18px_45px_rgba(30,27,75,0.08)] transform rotate-[1.2deg] max-w-[400px] mx-auto w-full"
+        >
+          <img
+            alt="Traje típico de Patzún presentado en maniquí"
+            class="w-full aspect-[4/5] object-cover object-center rounded-[22px]"
+            src="./img/patzun.png"
+          />
+          <div
+            class="flex items-center justify-between gap-3 px-[7px] pt-[13px] pb-[3px] font-extrabold"
+          >
+            <span>Traje típico de Patzún</span>
+            <small class="text-primary font-black">NUEVO</small>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-gradient-to-b from-white to-cool-slate border-y border-border-cool py-[65px] md:py-[90px]"
+        id="nuevos"
+      >
+        <div class="max-w-[1160px] w-[92%] mx-auto">
+          <div
+            class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-[30px] mb-[34px]"
+          >
+            <div>
+              <div
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-mesh-blue text-primary font-black text-[0.82rem] mb-4"
+              >
+                NUEVA COLECCIÓN
+              </div>
+              <h2
+                class="text-[clamp(2rem,4vw,3.25rem)] leading-none tracking-[-0.045em] font-bold"
+              >
+                Agregados recientemente
+              </h2>
+            </div>
+            <p class="max-w-[500px] text-on-surface-variant mt-3.5 sm:mt-0">
+              Conoce las piezas que acabamos de incorporar al catálogo. Cada
+              diseño destaca por sus colores, tejidos y detalles.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[22px]"
+          >
+            <article
+              class="bg-white border border-border-cool rounded-[22px] overflow-hidden shadow-[0_10px_30px_rgba(30,27,75,0.04)] transition-all duration-250 hover:-translate-y-1.5 hover:shadow-[0_18px_45px_rgba(30,27,75,0.08)]"
+            >
+              <div
+                class="h-[330px] overflow-hidden bg-gradient-to-br from-mesh-blue to-inverse-on-surface"
+              >
+                <img
+                  alt="Traje típico de Patzún"
+                  class="w-full h-full object-cover object-[50%_25%]"
+                  src="./img/patzun-1.jpg"
+                />
+              </div>
+              <div class="p-5">
+                <span
+                  class="inline-block px-2.5 py-1 rounded-full bg-mesh-blue text-primary text-[0.75rem] font-black mb-2.5"
+                  >Recién agregado</span
+                >
+                <h3 class="text-[1.22rem] font-bold mb-1.5">Traje de Patzún</h3>
+                <p class="text-on-surface-variant text-[0.91rem] mb-4">
+                  Huipil rojo multicolor, faja tejida y corte con diseño
+                  tradicional.
+                </p>
+                <div class="flex justify-between items-center gap-2.5">
+                  <span class="text-[1.2rem] font-black text-secondary"
+                    >Consultar precio</span
+                  >
+                  <button
+                    class="bg-inverse-on-surface text-secondary px-3.5 py-2 rounded-[10px] font-black cursor-pointer"
+                    onclick="consultar('Traje de Patzún')"
+                  >
+                    Consultar
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="bg-white border border-border-cool rounded-[22px] overflow-hidden shadow-[0_10px_30px_rgba(30,27,75,0.04)] transition-all duration-250 hover:-translate-y-1.5 hover:shadow-[0_18px_45px_rgba(30,27,75,0.08)]"
+            >
+              <div
+                class="h-[330px] overflow-hidden bg-gradient-to-br from-mesh-blue to-inverse-on-surface"
+              >
+                <img
+                  alt="Detalle de traje típico"
+                  class="w-full h-full object-cover object-[50%_52%]"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2GEqoSttTlz2AQMq_rq43TtcmrgttikRr6lD3rnrn4Q_SmicvnR1ospRG5eZwa1inBm9X7ZEpjg0qe4nBhkl2r8CrztBSa1cZ8-LAuR1dhVaTneBZ4zmETahB6-MJ54Exd_mva6KmB7dPR4dZagDvEbYPEUmIkC0m4Yg5mdQPsi1ZgV_2pqhuRxQGpVNUaz9YhkwmZaOPmHXhR1ofFY60lyMNOGQrdM5u0qfMLFpdXYd9X9WNDue7vw"
+                />
+              </div>
+              <div class="p-5">
+                <span
+                  class="inline-block px-2.5 py-1 rounded-full bg-mesh-blue text-primary text-[0.75rem] font-black mb-2.5"
+                  >Disponible</span
+                >
+                <h3 class="text-[1.22rem] font-bold mb-1.5">
+                  Diseño multicolor
+                </h3>
+                <p class="text-on-surface-variant text-[0.91rem] mb-4">
+                  Una propuesta vibrante para quienes buscan destacar los
+                  detalles textiles.
+                </p>
+                <div class="flex justify-between items-center gap-2.5">
+                  <span class="text-[1.2rem] font-black text-secondary"
+                    >Consultar precio</span
+                  >
+                  <button
+                    class="bg-inverse-on-surface text-secondary px-3.5 py-2 rounded-[10px] font-black cursor-pointer"
+                    onclick="consultar('Diseño multicolor')"
+                  >
+                    Consultar
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="bg-white border border-border-cool rounded-[22px] overflow-hidden shadow-[0_10px_30px_rgba(30,27,75,0.04)] transition-all duration-250 hover:-translate-y-1.5 hover:shadow-[0_18px_45px_rgba(30,27,75,0.08)]"
+            >
+              <div
+                class="h-[330px] overflow-hidden bg-gradient-to-br from-mesh-blue to-inverse-on-surface"
+              >
+                <img
+                  alt="Corte típico guatemalteco"
+                  class="w-full h-full object-cover object-[50%_88%]"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7ffX00M0V6L1qqQOt4OnGmWbZAg0q2_TUi3c8kYdCOMUc-lMdablj8JDmime_ANIUHPtnR9FHsmGkQI_LMSQ9Kw40Ksr5BYU3-FWkE2RG-mwsnAI3LOGoVMdMPoAfQ2zzwCs3WmTSQf21DhJanokhRFsZnqBjWjw1IeDL8kB3dpe13-9D-tBxILEgxQjypbBiwzeLB41kVxItGiZ37hz5DEc6OsKkYil-jz3sUsyAslY_PR6lBupzFw"
+                />
+              </div>
+              <div class="p-5">
+                <span
+                  class="inline-block px-2.5 py-1 rounded-full bg-mesh-blue text-primary text-[0.75rem] font-black mb-2.5"
+                  >Pieza especial</span
+                >
+                <h3 class="text-[1.22rem] font-bold mb-1.5">
+                  Corte tradicional
+                </h3>
+                <p class="text-on-surface-variant text-[0.91rem] mb-4">
+                  Combinación de patrones geométricos y colores intensos
+                  inspirados en Guatemala.
+                </p>
+                <div class="flex justify-between items-center gap-2.5">
+                  <span class="text-[1.2rem] font-black text-secondary"
+                    >Consultar precio</span
+                  >
+                  <button
+                    class="bg-inverse-on-surface text-secondary px-3.5 py-2 rounded-[10px] font-black cursor-pointer"
+                    onclick="consultar('Corte tradicional')"
+                  >
+                    Consultar
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="py-[65px] md:py-[90px]" id="historia">
+        <div
+          class="max-w-[1160px] w-[92%] mx-auto grid grid-cols-1 md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-[70px] items-start md:items-center"
+        >
+          <div>
+            <div
+              class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-mesh-blue text-primary font-black text-[0.82rem] mb-4"
+            >
+              NUESTRA ESENCIA
+            </div>
+            <h2
+              class="text-[clamp(2rem,4vw,3.5rem)] leading-[1.03] tracking-[-0.05em] font-bold mb-5"
+            >
+              Más que una prenda, una historia que continúa.
+            </h2>
+            <p class="text-on-surface-variant mb-4.5">
+              Nuestra colección busca acercar los textiles tradicionales
+              guatemaltecos a nuevas generaciones, resaltando sus colores,
+              diseños y el trabajo detrás de cada pieza.
+            </p>
+            <p class="text-on-surface-variant">
+              Seleccionamos cada traje pensando en su presentación, calidad y
+              autenticidad, para que puedas conocerlo y comprarlo desde
+              cualquier lugar.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mt-[25px]">
+            <div class="p-4 rounded-2xl bg-white border border-border-cool">
+              <strong class="block text-secondary mb-1"
+                >Diseños tradicionales</strong
+              >
+              <span class="text-[0.88rem] text-on-surface-variant"
+                >Inspirados en la riqueza textil de Guatemala.</span
+              >
+            </div>
+            <div class="p-4 rounded-2xl bg-white border border-border-cool">
+              <strong class="block text-secondary mb-1"
+                >Colores vibrantes</strong
+              >
+              <span class="text-[0.88rem] text-on-surface-variant"
+                >Una identidad visual que destaca a primera vista.</span
+              >
+            </div>
+            <div class="p-4 rounded-2xl bg-white border border-border-cool">
+              <strong class="block text-secondary mb-1"
+                >Detalles textiles</strong
+              >
+              <span class="text-[0.88rem] text-on-surface-variant"
+                >Información clara sobre cada pieza y sus características.</span
+              >
+            </div>
+            <div class="p-4 rounded-2xl bg-white border border-border-cool">
+              <strong class="block text-secondary mb-1">Compra sencilla</strong>
+              <span class="text-[0.88rem] text-on-surface-variant"
+                >Consulta disponibilidad y coordina tu entrega.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-gradient-to-br from-cool-slate to-inverse-on-surface py-[65px] md:py-[90px]"
+        id="envios"
+      >
+        <div class="max-w-[1160px] w-[92%] mx-auto">
+          <div
+            class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-[30px] mb-[34px]"
+          >
+            <div>
+              <div
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-mesh-blue text-primary font-black text-[0.82rem] mb-4"
+              >
+                COMPRA CON CONFIANZA
+              </div>
+              <h2
+                class="text-[clamp(2rem,4vw,3.25rem)] leading-none tracking-[-0.045em] font-bold"
+              >
+                Recíbelo donde estés.
+              </h2>
+            </div>
+            <p class="max-w-[500px] text-on-surface-variant mt-3.5 sm:mt-0">
+              Información sencilla para que el proceso de compra sea claro desde
+              el primer contacto.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[18px]"
+          >
+            <div
+              class="p-6 bg-white/90 border border-border-cool rounded-[20px]"
+            >
+              <div class="text-secondary mb-3">
+                <span class="material-symbols-outlined text-4xl"
+                  >local_shipping</span
+                >
+              </div>
+              <h3 class="font-bold mb-1.5">Envíos nacionales</h3>
+              <p class="text-on-surface-variant text-[0.92rem]">
+                Realizamos envíos a diferentes departamentos de Guatemala. El
+                costo depende del destino.
+              </p>
+            </div>
+            <div
+              class="p-6 bg-white/90 border border-border-cool rounded-[20px]"
+            >
+              <div class="text-secondary mb-3">
+                <span class="material-symbols-outlined text-4xl">verified</span>
+              </div>
+              <h3 class="font-bold mb-1.5">Entrega segura</h3>
+              <p class="text-on-surface-variant text-[0.92rem]">
+                Coordinamos la entrega y compartimos los detalles necesarios
+                para dar seguimiento al pedido.
+              </p>
+            </div>
+            <div
+              class="p-6 bg-white/90 border border-border-cool rounded-[20px]"
+            >
+              <div class="text-secondary mb-3">
+                <span class="material-symbols-outlined text-4xl"
+                  >support_agent</span
+                >
+              </div>
+              <h3 class="font-bold mb-1.5">Atención directa</h3>
+              <p class="text-on-surface-variant text-[0.92rem]">
+                Consulta medidas, disponibilidad, precio y opciones de envío
+                antes de realizar tu pedido.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="py-10 bg-deep-indigo text-white">
+      <div
+        class="max-w-[1160px] w-[92%] mx-auto flex flex-col sm:flex-row justify-between gap-5 items-start sm:items-center"
+      >
+        <div>
+          <strong class="text-lg">RaícesGT</strong>
+          <p class="text-surface-dim text-[0.9rem] mt-2.5 sm:mt-0">
+            Tradición guatemalteca con una presentación moderna.
+          </p>
+        </div>
+        <p class="text-surface-dim text-[0.9rem] mt-2.5 sm:mt-0">
+          © 2026 RaícesGT · Todos los derechos reservados
+        </p>
+      </div>
+    </footer>
+    <script>
+      function consultar(producto) {
+        const mensaje = encodeURIComponent(
+          `Hola, quisiera consultar disponibilidad y precio del producto: ${producto}.`
+        );
+        // Sustituye 502XXXXXXXX por el número real de WhatsApp.
+        window.open(`https://wa.me/502XXXXXXXX?text=${mensaje}`, "_blank");
+      }
+    </script>
+  </body>
+</html>

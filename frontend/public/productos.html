@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Búsqueda de Textiles - RaícesGT</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              outline: "#6e797e",
+              "surface-container": "#eaedff",
+              "on-tertiary-fixed": "#00201d",
+              "on-primary-fixed-variant": "#004e61",
+              "on-error": "#ffffff",
+              "cool-slate": "#f8fafc",
+              "secondary-container": "#645efb",
+              "primary-fixed-dim": "#6cd3f7",
+              "outline-variant": "#bdc8ce",
+              "on-error-container": "#93000a",
+              "on-background": "#131b2e",
+              "surface-tint": "#006780",
+              "border-cool": "#e2e8f0",
+              "on-surface": "#131b2e",
+              "surface-dim": "#d2d9f4",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed": "#001f28",
+              "on-tertiary-container": "#f4fffc",
+              "secondary-fixed": "#e2dfff",
+              secondary: "#4b41e1",
+              "mesh-blue": "#e0f2fe",
+              "on-surface-variant": "#3e484d",
+              background: "#faf8ff",
+              tertiary: "#00685f",
+              error: "#ba1a1a",
+              "on-primary-container": "#fafdff",
+              "secondary-fixed-dim": "#c3c0ff",
+              "surface-container-low": "#f2f3ff",
+              "deep-indigo": "#1e1b4b",
+              "tertiary-container": "#008378",
+              "on-secondary-fixed": "#0f0069",
+              "primary-fixed": "#b7eaff",
+              "primary-container": "#007f9d",
+              surface: "#faf8ff",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed-variant": "#3323cc",
+              "cobalt-blur": "rgba(79, 70, 229, 0.08)",
+              "error-container": "#ffdad6",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#e2e7ff",
+              "tertiary-fixed": "#89f5e7",
+              "surface-bright": "#faf8ff",
+              "inverse-on-surface": "#eef0ff",
+              "inverse-primary": "#6cd3f7",
+              primary: "#00647c",
+              "on-secondary": "#ffffff",
+              "surface-container-highest": "#dae2fd",
+              "on-secondary-container": "#fffbff",
+              "on-tertiary-fixed-variant": "#005049",
+              "inverse-surface": "#283044",
+              "tertiary-fixed-dim": "#6bd8cb",
+              "surface-variant": "#dae2fd",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-mobile": "16px",
+              "margin-desktop": "48px",
+              unit: "4px",
+              gutter: "24px",
+              "container-max": "1200px",
+              "section-padding-lg": "96px",
+            },
+            fontFamily: {
+              "body-md": ["Inter"],
+              "heading-h2-mobile": ["Inter"],
+              "display-h1-mobile": ["Inter"],
+              "nav-link": ["Inter"],
+              "ui-label": ["Inter"],
+              "display-h1": ["Inter"],
+              price: ["Inter"],
+              "heading-h2": ["Inter"],
+              "body-lg": ["Inter"],
+              eyebrow: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background text-on-background antialiased min-h-screen flex flex-col pt-16"
+  >
+    <!-- TopNavBar -->
+    <header
+      class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-lg border-b border-border-cool dark:border-outline-variant shadow-sm transition-all duration-300"
+    >
+      <div
+        class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between h-16"
+      >
+        <div
+          class="font-display-h1-mobile text-display-h1-mobile tracking-tighter text-primary dark:text-primary-fixed-dim"
+        >
+          <a href="./index.html">RaícesGT</a>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow">
+      <!-- Hero Search Section -->
+      <section
+        class="w-full bg-gradient-to-br from-surface-container-low to-surface-container py-section-padding-lg px-margin-mobile md:px-margin-desktop relative overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 opacity-10 pointer-events-none"
+          style="
+            background-image: radial-gradient(
+              circle at 2px 2px,
+              #00647c 1px,
+              transparent 0
+            );
+            background-size: 32px 32px;
+          "
+        ></div>
+        <div class="max-w-3xl mx-auto text-center relative z-10">
+          <h1
+            class="font-display-h1-mobile md:font-display-h1 text-display-h1-mobile md:text-display-h1 text-on-surface mb-6"
+          >
+            Explora Nuestra Herencia
+          </h1>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto"
+          >
+            Descubre la rica historia tejida en cada hilo. Encuentra textiles
+            por región y déjate cautivar por la maestría artesanal guatemalteca.
+          </p>
+
+          <!-- SECCION DE BOTON DE BUSQUEDA -->
+          <div class="relative max-w-2xl mx-auto group">
+            <div
+              class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-primary"
+            >
+              <span class="material-symbols-outlined">search</span>
+            </div>
+            <input
+              id="busqueda"
+              aria-label="Buscar departamento"
+              class="w-full pl-12 pr-4 py-4 bg-surface rounded-full border border-border-cool focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300 font-body-md text-body-md shadow-sm group-hover:shadow-md outline-none text-on-surface placeholder-outline"
+              placeholder="Ej. Quetzaltenango, Alta Verapaz, Sololá..."
+              type="text"
+            />
+          </div>
+          <!-- FIN SECCION BOTON DE BUSQUEDA -->
+        </div>
+      </section>
+      <!-- Search Results / Featured -->
+      <section
+        class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-padding-lg"
+      >
+        <h4>Resultados</h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          <section id="resultados"></section>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="w-full py-section-padding-lg bg-deep-indigo dark:bg-on-background flat no shadows"
+    >
+      <div
+        class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter items-center"
+      >
+        <div>
+          <div
+            class="font-display-h1-mobile text-display-h1-mobile text-surface-container-lowest mb-4"
+          >
+            RaícesGT
+          </div>
+          <p
+            class="font-body-md text-body-md text-surface-container-lowest dark:text-surface-bright"
+          >
+            © 2024 RaícesGT. El arte del tejido guatemalteco, curado con
+            precisión moderna.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-4 md:justify-end">
+          <a
+            class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright transition-colors hover:opacity-80"
+            href="#"
+            >Privacidad</a
+          >
+          <a
+            class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright transition-colors hover:opacity-80"
+            href="#"
+            >Términos de Servicio</a
+          >
+          <a
+            class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright transition-colors hover:opacity-80"
+            href="#"
+            >Contacto</a
+          >
+          <a
+            class="font-body-md text-body-md text-surface-variant/80 hover:text-surface-bright transition-colors hover:opacity-80"
+            href="#"
+            >Sostenibilidad</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!-- Product Modal -->
+  <div
+    class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-4 opacity-0 transition-opacity duration-300"
+    id="product-modal"
+  >
+    <div
+      class="bg-surface rounded-xl border border-border-cool shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto flex flex-col md:flex-row transform scale-95 transition-transform duration-300"
+    >
+      <div class="md:w-1/2 h-64 md:h-auto relative">
+        <img
+          alt="Detalle del producto"
+          class="w-full h-full object-cover"
+          id="modal-img"
+          src=""
+        />
+        <div
+          class="absolute top-4 left-4 backdrop-blur-sm font-ui-label text-ui-label px-3 py-1 rounded-full border"
+          id="modal-status"
+        ></div>
+      </div>
+      <div class="md:w-1/2 p-6 md:p-10 flex flex-col relative">
+        <button
+          aria-label="Cerrar modal"
+          class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors bg-surface-container-low rounded-full p-1"
+          onclick="closeModal()"
+        >
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <h3
+          class="font-heading-h2-mobile md:text-3xl font-bold text-on-surface mb-4 pr-8"
+          id="modal-title"
+        ></h3>
+        <p
+          class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow"
+          id="modal-desc"
+        ></p>
+        <div class="mt-auto pt-6 border-t border-border-cool">
+          <button
+            class="w-full bg-primary hover:bg-primary-container text-on-primary font-ui-label text-ui-label px-6 py-3 rounded-full transition-all duration-300 shadow-[0_4px_14px_rgba(79,70,229,0.2)] hover:-translate-y-0.5 flex items-center justify-center gap-2"
+          >
+            <span class="material-symbols-outlined">chat</span>
+            Consultar por WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/producto.js"></script>
+  <script>
+    const campoBusqueda = document.getElementById("busqueda");
+
+    campoBusqueda.addEventListener("input", buscarProductos);
+
+    //####################FUNCION MOSTRAR PRODUCTOS##################################
+    function mostrarProductos(lista) {
+      const contenedor = document.getElementById("resultados");
+
+      if (lista.length === 0) {
+        contenedor.innerHTML = `
+            <div>
+                <h3>No encontramos resultados</h3>
+                <p>
+                    Intenta buscar por nombre, municipio,
+                    departamento o color.
+                </p>
+            </div>
+        `;
+
+        return;
+      }
+
+      contenedor.innerHTML = lista
+        .map(
+          (producto) => `
+
+       <div class="bg-surface rounded-lg border border-border-cool shadow-[0_8px_30px_rgba(79,70,229,0.08)] hover:-translate-y-1.5 transition-all duration-300 group overflow-hidden flex flex-col">
+          <div class="relative h-64 overflow-hidden bg-surface-container-low">
+          <img alt="Traje de Quetzaltenango" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="${producto.imagen}"/>
+          <div class="absolute top-4 left-4 bg-mesh-blue/90 backdrop-blur-sm text-primary font-ui-label text-ui-label px-3 py-1 rounded-full border border-primary/10">
+          ${producto.departamento}
+          </div>
+        </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="font-heading-h2-mobile text-[24px] leading-tight font-bold text-on-surface mb-2">${producto.nombre}</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">${producto.descripcion}</p>
+          <div class="mt-auto pt-4 border-t border-border-cool flex justify-between items-center">
+          <span class="font-price text-price text-primary">Consúltanos</span>
+          <button class="text-secondary hover:text-primary transition-colors flex items-center gap-1 group-hover:translate-x-1 duration-300" data-desc="${producto.descripcion}" data-img="${producto.imagen}" data-status="${producto.departamento}" data-status-class="bg-mesh-blue/90 text-primary border-primary/10" data-title="${producto.nombre}" onclick="openModal(this)">
+<span class="font-ui-label text-ui-label">Ver detalles</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>  
+      
+  `
+        )
+        .join("");
+    }
+    //###############################################################################
+    //####################FUNCION BUSCAR PRODUCTO####################################
+    function buscarProductos() {
+      const texto = document
+        .getElementById("busqueda")
+        .value.toLowerCase()
+        .trim();
+
+      const contenedor = document.getElementById("resultados");
+
+      // Si el buscador está vacío, limpiar resultados
+      if (texto === "") {
+        contenedor.innerHTML = "";
+
+        return;
+      }
+
+      const resultados = productos.filter((producto) => {
+        return (
+          producto.nombre.toLowerCase().includes(texto) ||
+          producto.municipio.toLowerCase().includes(texto) ||
+          producto.departamento.toLowerCase().includes(texto) ||
+          producto.categoria.toLowerCase().includes(texto) ||
+          producto.color.toLowerCase().includes(texto)
+        );
+      });
+
+      mostrarProductos(resultados);
+    }
+
+    //MODAL - INFORMACION EXTENDIDA DEL TRAJE TIPICO
+
+    function openModal(btn) {
+      const title = btn.getAttribute("data-title");
+      const img = btn.getAttribute("data-img");
+      const desc = btn.getAttribute("data-desc");
+      const status = btn.getAttribute("data-status");
+      const statusClass = btn.getAttribute("data-status-class");
+
+      document.getElementById("modal-title").textContent = title;
+      document.getElementById("modal-img").src = img;
+      document.getElementById("modal-desc").textContent = desc;
+
+      const statusEl = document.getElementById("modal-status");
+      statusEl.textContent = status;
+      statusEl.className =
+        "absolute top-4 left-4 backdrop-blur-sm font-ui-label text-ui-label px-3 py-1 rounded-full border " +
+        statusClass;
+
+      const modal = document.getElementById("product-modal");
+      modal.classList.remove("hidden");
+
+      // Allow display: block to apply before animating opacity/transform
+      setTimeout(() => {
+        modal.classList.remove("opacity-0");
+        modal.querySelector(".transform").classList.remove("scale-95");
+        modal.querySelector(".transform").classList.add("scale-100");
+      }, 10);
+
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("product-modal");
+      modal.classList.add("opacity-0");
+      modal.querySelector(".transform").classList.remove("scale-100");
+      modal.querySelector(".transform").classList.add("scale-95");
+
+      setTimeout(() => {
+        modal.classList.add("hidden");
+        document.body.style.overflow = "";
+      }, 300);
+    }
+
+    // Close on backdrop click
+    document
+      .getElementById("product-modal")
+      .addEventListener("click", function (e) {
+        if (e.target === this) {
+          closeModal();
+        }
+      });
+  </script>
+</html>
