@@ -1,20 +1,45 @@
 services:
 
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: artesanias-backend
+    restart: always
+    env_file:
+      - ./backend/.env
+    ports:
+      - "3000:3000"
+    networks:
+      - artesanias-network
+    depends_on:
+      - oracle
+
   nginx:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-
     container_name: artesanias-nginx
-
     restart: always
-
     ports:
       - "80:80"
-
+    depends_on:
+      - backend
     networks:
       - artesanias-network
 
+  oracle:
+    image: gvenzl/oracle-xe:21-slim
+    container_name: artesanias-oracle
+    restart: always
+    environment:
+      ORACLE_PASSWORD: ${ORACLE_PASSWORD}
+    ports:
+      - "1521:1521"
+    volumes:
+      - ./oracle/oradata:/opt/oracle/oradata
+    networks:
+      - artesanias-network
 
 networks:
   artesanias-network:

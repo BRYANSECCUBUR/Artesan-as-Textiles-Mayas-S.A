@@ -1,0 +1,21 @@
+services:
+
+  nginx:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+
+    container_name: artesanias-nginx
+
+    restart: always
+
+    ports:
+      - "80:80"
+
+    networks:
+      - artesanias-network
+
+
+networks:
+  artesanias-network:
+    driver: bridge
