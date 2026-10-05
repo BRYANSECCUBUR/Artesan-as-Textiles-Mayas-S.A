@@ -282,7 +282,7 @@ const productos = [
         categoria: "Blusa",
         color: "Multicolor",
         precio: 2900,
-        imagen: "./img/traje 23.jpeg",
+        imagen: "./img/traje 23.png",
         descripcion:"Blusa bordada a mano de Sacatepéquez"
     },
         {
@@ -293,7 +293,7 @@ const productos = [
         categoria: "Blusa",
         color: "Multicolor",
         precio: 3000,
-        imagen: "./img/traje 24.jpeg",
+        imagen: "./img/traje 24.png",
         descripcion:"Blusa bordada a mano de Sacatepéquez"
     },
         {
@@ -304,7 +304,7 @@ const productos = [
         categoria: "Blusa",
         color: "Naranja",
         precio: 450,
-        imagen: "./img/traje 25.jpeg",
+        imagen: "./img/traje 25.png",
         descripcion:"Blusa bordada a mano de Coban"
     },
         {
@@ -315,7 +315,7 @@ const productos = [
         categoria: "Blusa",
         color: "Multicolor",
         precio: 3000,
-        imagen: "./img/traje 26.jpeg",
+        imagen: "./img/traje 26.png",
         descripcion:"Blusa bordada a mano de San Pedro Sacatepéquez"
     },
         {
@@ -326,7 +326,7 @@ const productos = [
         categoria: "Blusa",
         color: "Rojo",
         precio: 3500,
-        imagen: "./img/traje 27.jpeg",
+        imagen: "./img/traje 27.png",
         descripcion:"Blusa bordada a mano"
     }
 ];
