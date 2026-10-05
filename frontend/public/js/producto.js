@@ -18,7 +18,7 @@ const productos = [
         categoria: "Huipil",
         color: "Multicolor",
         precio: 450,
-        imagen: "./img/images.png",
+        imagen: "./img/santiago.jpeg",
         descripcion:"huipil de santiago atitlan"
     },
     {
@@ -328,5 +328,137 @@ const productos = [
         precio: 3500,
         imagen: "./img/traje 27.png",
         descripcion:"Blusa bordada a mano"
+    },
+            {
+        id: 31,
+        nombre: "Indumentaria de Sumpango",
+        municipio: "Sumpango",
+        departamento: "Sacatepequez",
+        categoria: "Traje",
+        color: "Blanco",
+        precio: 3500,
+        imagen: "./img/traje28.jpeg",
+        descripcion:"Indumentaria de Sumpango Sacatepequez multicolor"
+    },
+        {
+        id: 32,
+        nombre: "Indumentaria de San Miguel",
+        municipio: "Totonicapan",
+        departamento: "Guatemala",
+        categoria: "Traje",
+        color: "Rojo",
+        precio: 4500,
+        imagen: "./img/traje29.jpeg",
+        descripcion:"Indumentaria de San Miguel Totonicapan"
+    },
+        {
+        id: 33,
+        nombre: "Indumentaria de San Juan la Laguna",
+        municipio: "San Juan la Laguna",
+        departamento: "Solola",
+        categoria: "Traje",
+        color: "Amarillo",
+        precio: 2800,
+        imagen: "./img/traje30.jpeg",
+        descripcion:"Indumentaria de San Juan la Laguna color Amarillo"
+    },
+        {
+        id: 34,
+        nombre: "Indumentaria de San Juan la Laguna",
+        municipio: "San Juan la Laguna",
+        departamento: "Solola",
+        categoria: "Traje",
+        color: "Azul",
+        precio: 2800,
+        imagen: "./img/traje31.jpeg",
+        descripcion:"Indumentaria de San Juan la Laguna Mojado de color Azul"
+    },
+        {
+        id: 35,
+        nombre: "Indumentaria de San Cristobal",
+        municipio: "San Cristobal",
+        departamento: "Totonicapan",
+        categoria: "Traje",
+        color: "Rojo",
+        precio: 3900,
+        imagen: "./img/traje32.jpeg",
+        descripcion:"Indumentaria de San Cristobal Totonicapan"
+    },
+        {
+        id: 36,
+        nombre: "Indumentaria de San Pedro",
+        municipio: "San Pedro",
+        departamento: "San Marcos",
+        categoria: "Traje",
+        color: "Amarillo",
+        precio: 5000,
+        imagen: "./img/traje33.jpeg",
+        descripcion:"Indumentaria de San Pedro San Marcos"
+    },
+            {
+        id: 37,
+        nombre: "Indumentaria de San Pedro Soloma",
+        municipio: "San Pedro Soloma",
+        departamento: "Huehuetenango",
+        categoria: "Traje",
+        color: "Rojo y blanco",
+        precio: 4500,
+        imagen: "./img/traje34.jpeg",
+        descripcion:"Indumentaria de San Pedro Soloma de color Rojo y blanco"
+    },
+            {
+        id: 38,
+        nombre: "Indumentaria Color negro",
+        municipio: "Sumpango",
+        departamento: "Sacatepequez",
+        categoria: "Traje",
+        color: "Negro",
+        precio: 3500,
+        imagen: "./img/traje35.jpeg",
+        descripcion:"Indumentaria de Sumpango Sacatepequez bordado a mano de color negro"
+    },
+            {
+        id: 39,
+        nombre: "Indumentaria bordado a mano",
+        municipio: "San Pedro Sacatepequez",
+        departamento: "Guatemala",
+        categoria: "Traje",
+        color: "multicolor",
+        precio: 5200,
+        imagen: "./img/traje36.jpeg",
+        descripcion:"Indumentaria de San Pedro Sacatepequez bordado a mano"
+    },
+            {
+        id: 40,
+        nombre: "Indumentaria bordado a mano",
+        municipio: "San Juan Sacatepequez",
+        departamento: "Guatemala",
+        categoria: "Traje",
+        color: "Amarillo",
+        precio: 5200,
+        imagen: "./img/traje37.jpeg",
+        descripcion:"Indumentaria de San Juan Sacatepequez bordado a mano"
+    },
+            {
+        id: 41,
+        nombre: "Indumentaria bordado a mano",
+        municipio: "Palin",
+        departamento: "Escuintla",
+        categoria: "Traje",
+        color: "Blanco, rojo y negro",
+        precio: 5200,
+        imagen: "./img/traje38.jpeg",
+        descripcion:"Indumentaria de Palin Escuintla bordado a mano"
+    },
+            {
+        id: 42,
+        nombre: "Indumentaria bordado a mano",
+        municipio: "Palin",
+        departamento: "Escuintla",
+        categoria: "Traje",
+        color: "Celeste",
+        precio: 5200,
+        imagen: "./img/traje38.jpeg",
+        descripcion:"Indumentaria de Palin Escuintla bordado a mano"
     }
 ];
