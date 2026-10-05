@@ -458,7 +458,7 @@ const productos = [
         categoria: "Traje",
         color: "Celeste",
         precio: 5200,
-        imagen: "./img/traje38.jpeg",
+        imagen: "./img/traje39.jpeg",
         descripcion:"Indumentaria de Palin Escuintla bordado a mano"
     }
 ];
