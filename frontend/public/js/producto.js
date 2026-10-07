@@ -172,7 +172,7 @@ const productos = [
         categoria: "Blusa",
         color: "verde",
         precio: 900,
-        imagen: "./img/traje 13.jpeg",
+        imagen: "./img/traje%20%2013.jpeg",
         descripcion:"Blusa bordada a mano de San Lucas Toliman"
     },
         {
