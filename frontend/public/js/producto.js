@@ -29,7 +29,7 @@ const productos = [
         categoria: "Corte",
         color: "Azul",
         precio: 300,
-        imagen: "./img/san juan.jpg",
+        imagen: "./img/san%20juan.jpg",
         descripcion:"corte tradicional"
     },
         {
