@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="Contáctanos para consultar precios, medidas, disponibilidad y envíos de nuestros textiles guatemaltecos." />
+    <title>Contacto | RaícesGT</title>
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="bg-background text-on-background antialiased min-h-screen flex flex-col" data-pagina="contacto">
+    <header id="encabezado" class="sticky top-0 z-50 h-[72px] bg-deep-indigo"></header>
+
+    <main class="flex-grow">
+      <section class="bg-gradient-to-br from-surface-container-low to-surface-container py-14 md:py-20">
+        <div class="max-w-[1160px] w-[92%] mx-auto">
+          <span class="inline-flex px-3.5 py-1.5 rounded-full bg-mesh-blue text-primary font-black text-[0.82rem] mb-4">CONTACTO</span>
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Hablemos de tu próximo textil</h1>
+          <p class="text-lg text-on-surface-variant max-w-2xl">
+            Consulta precios, medidas, disponibilidad y opciones de envío. Te respondemos por WhatsApp.
+          </p>
+        </div>
+      </section>
+
+      <section class="max-w-[1160px] w-[92%] mx-auto py-12 md:py-16 grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-8">
+        <!-- Datos de contacto -->
+        <div class="space-y-4">
+          <div class="p-6 bg-white rounded-xl border border-border-cool shadow-sm">
+            <h2 class="font-bold text-lg mb-1">WhatsApp</h2>
+            <p class="text-on-surface-variant text-sm mb-4">La forma más rápida de comunicarte con nosotros.</p>
+            <button type="button" onclick="abrirWhatsApp()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-whatsapp text-white font-bold shadow-md hover:brightness-105">
+              <span id="numero-whatsapp"></span>
+            </button>
+          </div>
+          <div id="caja-redes" class="hidden p-6 bg-white rounded-xl border border-border-cool shadow-sm">
+            <h2 class="font-bold text-lg mb-1">Redes sociales</h2>
+            <p class="text-on-surface-variant text-sm mb-4">Síguenos para ver nuevas piezas.</p>
+            <div id="lista-redes" class="flex flex-wrap gap-2"></div>
+          </div>
+          <div class="p-6 bg-white rounded-xl border border-border-cool shadow-sm">
+            <h2 class="font-bold text-lg mb-3">Preguntas frecuentes</h2>
+            <details class="py-2 border-b border-border-cool">
+              <summary class="cursor-pointer font-semibold">¿Hacen envíos a todo el país?</summary>
+              <p class="text-on-surface-variant text-sm mt-2">Realizamos envíos a diferentes departamentos de Guatemala. El costo depende del destino.</p>
+            </details>
+            <details class="py-2 border-b border-border-cool">
+              <summary class="cursor-pointer font-semibold">¿Cómo sé si la talla me queda?</summary>
+              <p class="text-on-surface-variant text-sm mt-2">Escríbenos con tus medidas y te confirmamos antes de realizar el pedido.</p>
+            </details>
+            <details class="py-2">
+              <summary class="cursor-pointer font-semibold">¿Las piezas están disponibles?</summary>
+              <p class="text-on-surface-variant text-sm mt-2">Muchas piezas son únicas. Consulta disponibilidad antes de tu compra.</p>
+            </details>
+          </div>
+        </div>
+
+        <!-- Formulario: arma el mensaje y lo abre en WhatsApp -->
+        <form id="form-contacto" class="p-6 md:p-8 bg-white rounded-xl border border-border-cool shadow-sm space-y-4">
+          <div>
+            <h2 class="font-bold text-xl">Envíanos un mensaje</h2>
+            <p class="text-on-surface-variant text-sm mt-1">Al enviar, se abrirá WhatsApp con tu mensaje listo.</p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <label class="block">
+              <span class="block text-sm font-semibold mb-1.5">Nombre</span>
+              <input name="nombre" required autocomplete="name" class="w-full rounded-lg border-border-cool focus:border-primary focus:ring-primary/20" />
+            </label>
+            <label class="block">
+              <span class="block text-sm font-semibold mb-1.5">Departamento de envío</span>
+              <input name="departamento" placeholder="Opcional" class="w-full rounded-lg border-border-cool focus:border-primary focus:ring-primary/20" />
+            </label>
+          </div>
+          <label class="block">
+            <span class="block text-sm font-semibold mb-1.5">Motivo</span>
+            <select name="motivo" class="w-full rounded-lg border-border-cool focus:border-primary focus:ring-primary/20">
+              <option>Consultar precio y disponibilidad</option>
+              <option>Medidas y tallas</option>
+              <option>Envíos</option>
+              <option>Pedido especial</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label class="block">
+            <span class="block text-sm font-semibold mb-1.5">Mensaje</span>
+            <textarea name="mensaje" rows="5" required class="w-full rounded-lg border-border-cool focus:border-primary focus:ring-primary/20" placeholder="Cuéntanos qué pieza te interesa..."></textarea>
+          </label>
+          <button type="submit" class="w-full sm:w-auto px-6 py-3 rounded-full bg-primary hover:bg-primary-container text-white font-bold shadow-md transition">
+            Enviar por WhatsApp
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="pie"></footer>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/layout.js"></script>
+    <script>
+      document.getElementById("numero-whatsapp").textContent = SITIO.whatsappVisible;
+
+      const redes = Object.entries(SITIO.redes).filter(([, url]) => url);
+      if (redes.length) {
+        document.getElementById("caja-redes").classList.remove("hidden");
+        document.getElementById("lista-redes").innerHTML = redes
+          .map(
+            ([red, url]) =>
+              `<a href="${url}" target="_blank" rel="noopener" class="px-4 py-2 rounded-full bg-surface-container-low text-primary font-semibold capitalize hover:bg-mesh-blue">${red}</a>`
+          )
+          .join("");
+      }
+
+      document.getElementById("form-contacto").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const datos = new FormData(e.target);
+        const lineas = [
+          `Hola, soy ${datos.get("nombre").trim()}.`,
+          `Motivo: ${datos.get("motivo")}.`,
+          datos.get("departamento").trim() ? `Departamento de envío: ${datos.get("departamento").trim()}.` : "",
+          "",
+          datos.get("mensaje").trim(),
+        ];
+        abrirWhatsApp(lineas.filter((l, i) => l || i === 3).join("\n"));
+      });
+    </script>
+  </body>
+</html>

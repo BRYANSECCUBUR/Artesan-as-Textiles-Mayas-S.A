@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="Textil guatemalteco hecho con tradición. Consulta precio y disponibilidad por WhatsApp." />
+    <title>Producto | RaícesGT</title>
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="bg-background text-on-background antialiased min-h-screen flex flex-col" data-pagina="productos">
+    <header id="encabezado" class="sticky top-0 z-50 h-[72px] bg-deep-indigo"></header>
+
+    <main class="flex-grow">
+      <div class="max-w-[1160px] w-[92%] mx-auto py-8 md:py-12">
+        <!-- Ruta de navegación -->
+        <nav class="text-sm text-on-surface-variant mb-6" aria-label="Ruta">
+          <a href="./index.html" class="hover:text-primary">Inicio</a>
+          <span class="mx-1.5">/</span>
+          <a href="./productos.html" class="hover:text-primary">Colección</a>
+          <span class="mx-1.5">/</span>
+          <span id="ruta-actual" class="text-on-surface font-medium"></span>
+        </nav>
+
+        <!-- Detalle (se llena con js/detalle.js) -->
+        <article id="detalle" class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start"></article>
+
+        <!-- Productos relacionados -->
+        <section id="relacionados-seccion" class="hidden mt-16 md:mt-24">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6">También te puede gustar</h2>
+          <div id="relacionados" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/layout.js"></script>
+    <script src="./js/producto.js"></script>
+    <script src="./js/detalle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Deja espacio para la cabecera fija al saltar a #historia, #envios... */
+  section[id] {
+    scroll-margin-top: 84px;
+  }
+}
+
+@layer components {
+  /* Franja de colores inspirada en los tejidos, usada bajo la cabecera */
+  .franja-textil {
+    height: 4px;
+    background: linear-gradient(
+      90deg,
+      #ba1a1a 0%, #ba1a1a 14%,
+      #f59e0b 14%, #f59e0b 28%,
+      #00685f 28%, #00685f 42%,
+      #6cd3f7 42%, #6cd3f7 56%,
+      #4b41e1 56%, #4b41e1 70%,
+      #db2777 70%, #db2777 84%,
+      #f59e0b 84%, #f59e0b 100%
+    );
+  }
+
+  /* Texto legal / informativo de las páginas secundarias */
+  .contenido-pagina h2 {
+    @apply text-2xl font-bold text-on-surface mt-10 mb-3;
+  }
+  .contenido-pagina p,
+  .contenido-pagina li {
+    @apply text-on-surface-variant leading-relaxed;
+  }
+  .contenido-pagina p {
+    @apply mb-4;
+  }
+  .contenido-pagina ul {
+    @apply list-disc pl-6 mb-4 space-y-1.5;
+  }
+  .contenido-pagina a {
+    @apply text-primary font-medium underline underline-offset-2 hover:text-secondary;
+  }
+}
